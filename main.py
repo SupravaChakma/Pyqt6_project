@@ -1,13 +1,12 @@
-# main.py
 import sys
 import os
 import time
 from functools import partial
 from PyQt6.QtWidgets import (
     QApplication, QMainWindow, QTreeView, QTabWidget,
-    QSplitter, QLineEdit, QTextEdit, QComboBox, QTableView, QVBoxLayout, QWidget, QStatusBar, QToolBar, QFileDialog,
-    QSizePolicy, QPushButton, QInputDialog, QMessageBox, QMenu, QAbstractItemView, QDialog, QFormLayout, QHBoxLayout,
-    QStackedWidget, QLabel, QGroupBox
+    QSplitter, QTextEdit, QComboBox, QTableView, QVBoxLayout, QWidget, QStatusBar, QToolBar,
+    QSizePolicy, QPushButton, QInputDialog, QMessageBox, QMenu, QAbstractItemView, QDialog,
+    QHBoxLayout, QStackedWidget, QLabel, QGroupBox
 )
 from PyQt6.QtGui import QAction, QIcon, QKeySequence, QStandardItemModel, QStandardItem, QFont, QMovie
 from PyQt6.QtCore import Qt, QDir, QModelIndex, QSize, QObject, pyqtSignal, QRunnable, QThreadPool, QTimer
@@ -18,7 +17,6 @@ from db_manager import DatabaseManager
 from sqlite_connector import SQLiteConnector
 from postgres_connector import PostgresConnector
 # from oracle_connector import OracleConnector # Future Oracle connector
-
 
 class MainWindow(QMainWindow):
     QUERY_TIMEOUT = 60000
